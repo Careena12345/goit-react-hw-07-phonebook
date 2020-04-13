@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #212121;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phoneBook {
+  height: 100vh;
+}
+
+.bgLight {
+  background: #ffffff;
+  color: #3c3c3c;
+}
+
+.bgDark {
+  background: #3c3c3c;
+  color: #ffffff;
+}
+
+.themeSelector {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.themeSelector .label {
+  top: -10px;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff9900;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #ff3300;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #ff3300;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.formBtnLight {
+  background: #ff9900;
+}
+
+.formBtnLight:hover:not(:active) {
+  background: #cc6600;
+}
+
+.formBtnLight:active {
+  background: #cc6600;
+}
+
+.formBtnDark {
+  background: #ff3300;
+}
+
+.formBtnDark:hover:not(:active) {
+  background: #cc0000;
+}
+
+.formBtnDark:active {
+  background: linear-gradient(#134f80, #061b2c) #134f80;
+}
